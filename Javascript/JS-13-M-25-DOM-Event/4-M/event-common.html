@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="name-field"></p>
+    <input type="text" id="input-update" />
+    <button id="update-name">Update</button>
+    <!--  -->
+    <br />
+    <p id="clicking-method">
+      Click "Just function" OR "direct add Event Listener" and see their
+      innerText
+    </p>
+    <button onclick="handleJustFunctioClick()">Just function</button>
+    <button id="handle-event">direct add Event Listener</button>
+    <!--  -->
+    <p id="name-age">See my name or age</p>
+    <button id="button-1" onclick="showMyName()">
+      Click Me for see my name &raquo;
+    </button>
+
+    <button id="button-2">Click me for see my age &raquo;</button>
+
+    <!--  -->
+
+    <script>
+      // // // using function
+      function handleJustFunctioClick() {
+        const p = document.getElementById("clicking-method");
+        p.innerText = "Set by using function";
+      }
+      // // // direct
+      document
+        .getElementById("handle-event")
+        .addEventListener("click", function () {
+          const p = document.getElementById("clicking-method");
+          p.innerText = "set by direct using function";
+        });
+    </script>
+
+    <script>
+      function showMyName() {
+        const MyName = document.getElementById(`name-age`);
+        MyName.innerText = `My name is "Mohammad Asraful Alam Jehad"`;
+      }
+      // // //
+      document
+        .getElementById("button-2")
+        .addEventListener(`click`, function () {
+          document.getElementById("name-age").innerText = "My age is 26.";
+        });
+    </script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script>
+      document
+        .getElementById("update-name")
+        .addEventListener("click", function () {
+          const nameField = document.getElementById("input-update");
+          document.getElementById("name-field").innerText = nameField.value;
+          nameField.value = "";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <ul id="my-list">
+      <li>This is my blog - 1</li>
+      <li>This is my blog - 2</li>
+      <li>This is my blog - 3</li>
+      <li>This is my blog - 4</li>
+    </ul>
+
+    <script>
+      /*   // where to add
+      const ulList = document.getElementById("my-list");
+      // What to add
+      const addList = document.createElement("li");
+      // add
+      ulList.appendChild(addList);
+      // set text that element
+      addList.innerText = "This is my blog - 5"; */
+
+      // // //
+
+      /* 
+      const addToBody = document.getElementById("body");
+      const addArticle = document.createElement("article");
+      addToBody.appendChild(addArticle);
+      addArticle.innerText = "Lorem ipsum doller sit."; */
+
+      // // //
+
+      const UlList = document.getElementById("my-list");
+      const AddList = document.createElement("li");
+      const addText = UlList.appendChild(AddList);
+      addText.innerText = "This is my blog - 5";
+      //
+      const addInUl = document.getElementById("my-list");
+      const addLiInUl = document.createElement("li");
+      addInUl.appendChild(addLiInUl);
+      addLiInUl.innerText = "This is my blog - 6";
+
+      for (let i = 7; i <= 15; i++) {
+        const addInUl = document.getElementById("my-list");
+        const addLiInUl = document.createElement("li");
+        addInUl.appendChild(addLiInUl);
+        addLiInUl.innerText = `This is my blog - ${i}`;
+
+        //
+
+        if (addLiInUl.innerText == `This is my blog - 7`) {
+          addLiInUl.style.color = "red";
+        } else if (addLiInUl.innerText == `This is my blog - 8`) {
+          addLiInUl.innerText = "This is my blog - 8th";
+          addLiInUl.style.color = "skyblue";
+        } else if (addLiInUl.innerText == "This is my blog - 9") {
+          addLiInUl.style.color = "green";
+          addLiInUl.style.fontWeight = "bold";
+        } else {
+          addLiInUl.style.color = "#ab47bc";
+          addLiInUl.style.fontWeight = "bold";
+          addLiInUl.style.backgroundColor = "yellow";
+          // addLiInUl.style.display = "inline-block";
+          addLiInUl.style.width = "137px";
+        }
+      }
+
+      // new loop
+
+      const friendsName = [
+        "Akib",
+        "Sabit",
+        "Sazzad Dew",
+        "Sazzad HD",
+        "Nayeem",
+        "Sabet",
+        "Shorif",
+        "Tuhin",
+      ];
+
+      for (let i = 0; i < friendsName.length; i++) {
+        const body = document.getElementById("body");
+        const division = document.createElement("div");
+        const paragraph = document.createElement("p");
+        body.appendChild(paragraph);
+        paragraph.innerText = `He is my friend number - ${friendsName[i]}`;
+      }
+
+      // const body = document.getElementById("body");
+      // body.innerHTML = "<p>Lorem ipsum</p>";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <section>
+      <div id="container">
+        <div id="about">
+          <p>This is my paragraph - 1</p>
+          <p>This is my paragraph - 2</p>
+          <p>This is my paragraph - 3</p>
+          <p>This is my paragraph - 4</p>
+          <p>This is my paragraph - 5</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <script>
+      console.log("My paragraph 01");
+      const callParagraph = document.getElementById("about");
+      const addParagraph = document.createElement("p");
+      callParagraph.appendChild(addParagraph);
+      addParagraph.innerText = "This is my paragraph - 6";
+
+      //
+
+      const friendsName = [
+        "Asraf",
+        "Akib",
+        "HD Sazzad",
+        "Sazzad Dew",
+        "Sabit",
+        "Mehedi",
+        "Nayeem",
+        "Tuhin",
+        "Shorif",
+        "Rocky",
+      ];
+      //
+      for (let i = 0; i < friendsName.length; i++) {
+        const callElement = document.getElementById("about");
+        const addElement = document.createElement("p");
+        callElement.appendChild(addElement);
+        addElement.innerText = `He is my friend - ${friendsName[i]}`;
+
+        if (addElement.innerText == `He is my friend - Asraf`) {
+          addElement.style.color = "red";
+        } else if (addElement.innerText == `He is my friend - Akib`) {
+          addElement.style.color = "green";
+        } else if (addElement.innerText == `He is my friend - HD Sazzad`) {
+          addElement.style.color = "yellow";
+        } else if (addElement.innerText == `He is my friend - Sazzad Dew`) {
+          addElement.style.color = "Violet";
+        } else if (addElement.innerText == `He is my friend - Sabit`) {
+          addElement.style.color = "blue";
+        } else if (addElement.innerText == `He is my friend - Mehedi`) {
+          addElement.style.color = "orange";
+        } else if (addElement.innerText == `He is my friend - Nayeem`) {
+          addElement.style.color = "skyblue";
+        } else if (addElement.innerText == `He is my friend - Shorif`) {
+          addElement.style.color = "#e65100";
+        } else {
+          addElement.style.color = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

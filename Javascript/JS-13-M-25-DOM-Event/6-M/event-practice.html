@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h2>More Events</h2>
+    <section>
+      <h3 id="secret-info">Very very importants secret information</h3>
+      <input type="text" placeholder="please type delete" id="input-confirm" />
+      <button id="delete-btn">Delete</button>
+      <button id="restore-btn">Restore</button>
+    </section>
+
+    <script>
+      document
+        .getElementById("delete-btn")
+        .addEventListener("click", function () {
+          document.getElementById("secret-info").style.display = "none";
+        });
+
+      //
+
+      document
+        .getElementById("restore-btn")
+        .addEventListener("click", function () {
+          document.getElementById("secret-info").style.display = "block";
+        });
+    </script>
+  </body>
+</html>

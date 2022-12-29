@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  background-color: #fbfbfb;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+}
+
+#login-header {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.payment-boxes {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box1 {
+  background-color: #bbf7d0;
+  padding: 40px 20px;
+}
+.box2 {
+  background-color: #7c3aed;
+  padding: 40px 20px;
+}
+.box3 {
+  background-color: #03d26b;
+  padding: 40px 20px;
+}
+/*  */
+
+.deposit-withdraw {
+  margin-top: 8px;
+}
+
+.deposit-withdraw-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.deposit-box {
+  background-color: #86efac;
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+
+#deposit-button {
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+input {
+  padding: 5px 10px;
+  display: block;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.withdraw-box {
+  background-color: #38bdf8;
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+
+#Withdraw-button {
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}

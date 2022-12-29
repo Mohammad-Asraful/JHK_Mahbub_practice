@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Exercise</title>
+    <!-- <script src="./exercise.js"></script> -->
+  </head>
+  <body>
+    <div id="headers">
+      <h2 class="light">Lorem ipsum dolor sit.</h2>
+      <h2 class="light">Dicta inventore eligendi consequatur?</h2>
+      <h2 class="light">Voluptatum natus atque aliquam!</h2>
+      <h2 class="light">Doloribus deserunt voluptate aperiam.</h2>
+      <h2 class="light">Nemo nobis itaque accusamus?</h2>
+    </div>
+    <!--  -->
+    <script>
+      /* const h2Colors = document.querySelectorAll(".light");
+      console.log(h2Colors); */
+      //
+      const h2Colors = document.getElementsByClassName("light");
+
+      for (let index = 0; index < h2Colors.length; index++) {
+        h2Colors[index].style.color = "red";
+      }
+    </script>
+    <!--  -->
+    <div id="text-box">
+      <p class="change-style">Lorem ipsum dolor sit amet.</p>
+      <p class="change-style">Inventore amet blanditiis odio vero.</p>
+      <p class="change-style">Molestias quis tempora iure voluptas.</p>
+      <p class="change-style">Officia, minus rem. Nemo, veniam.</p>
+      <p class="change-style">Cupiditate voluptas alias cumque accusamus?</p>
+      <p class="change-style">Itaque, quas ratione. Obcaecati, fugit!</p>
+      <p class="change-style">Quasi velit odio debitis dicta?</p>
+      <p class="change-style">Quaerat libero quis sunt magnam.</p>
+    </div>
+    <!--  -->
+    <script>
+      const changeStyle = document.getElementsByClassName("change-style");
+
+      const textBox = document.getElementById("text-box");
+      textBox.style.backgroundColor = "red";
+      textBox.style.width = "330px";
+      textBox.style.padding = "5px";
+      textBox.style.display = "grid";
+      textBox.style.justifyContent = "center";
+      //
+      const addElement = document.createElement("p");
+      addElement.innerText = "Asraful Alam Jehad";
+      addElement.style.color = "red";
+      addElement.style.backgroundColor = "lightblue";
+      addElement.style.padding = "10px";
+      addElement.style.width = "300px";
+      addElement.style.textAlign = "center";
+      addElement.style.margin = "2px";
+      textBox.appendChild(addElement);
+      //
+
+      for (let i = 0; i < changeStyle.length; i++) {
+        changeStyle[i].style.color = "red";
+        changeStyle[i].style.backgroundColor = "lightblue";
+        changeStyle[i].style.padding = "10px";
+        changeStyle[i].style.width = "300px";
+        changeStyle[i].style.textAlign = "center";
+        changeStyle[i].style.margin = "2px";
+      }
+    </script>
+  </body>
+</html>

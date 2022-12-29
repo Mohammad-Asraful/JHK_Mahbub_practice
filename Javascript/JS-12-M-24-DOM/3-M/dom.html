@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my blog website.</h1>
+    </header>
+
+    <main>
+      <section id="blog" class="blog">
+        <header>
+          <h2>Blogs list</h2>
+          <ul id="blog-list">
+            <li>Blog-1</li>
+            <li>Blog-2</li>
+            <li>Blog-3</li>
+            <li>Blog-4</li>
+          </ul>
+        </header>
+
+        <article class="blog">
+          <h3>My Awesome Blog-1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            consequatur totam, velit unde nesciunt, cumque magni distinctio at
+            ipsa magnam fugiat soluta nam consectetur placeat ex voluptatum,
+            beatae ut est.
+          </p>
+        </article>
+        <article id="second-blog" class="blog">
+          <h3 id="second-title">My Awesome Blog-2</h3>
+          <p>
+            Accusamus, quas eaque vel praesentium eos delectus totam, blanditiis
+            dicta maiores explicabo vero earum, inventore laboriosam ex nulla
+            iusto magnam at odit ipsam quae asperiores nobis dolor. Tenetur, ut
+            illum!
+          </p>
+        </article>
+        <article class="blog">
+          <h3 id="third-title">My Awesome Blog-3</h3>
+          <p>
+            Dolore, magnam cum expedita consequuntur error ea fugiat odit est
+            dicta sint, repellendus laudantium laborum minus commodi quidem
+            assumenda tempora temporibus optio magni? Esse, tenetur? Ipsum,
+            voluptate rerum. Repudiandae, perferendis?
+          </p>
+        </article>
+        <article class="blog">
+          <h3 id="fourth-title">My Awesome Blog-4</h3>
+          <p>
+            Dolore, magnam cum expedita consequuntur error ea fugiat odit est
+            dicta sint, repellendus laudantium laborum minus commodi quidem
+            assumenda tempora temporibus optio magni? Esse, tenetur? Ipsum,
+            voluptate rerum. Repudiandae, perferendis?
+          </p>
+
+          <span>lorem ipsum dolor - 1</span>
+          <span>lorem ipsum dolor - 2</span>
+          <span>lorem ipsum dolor - 3</span>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const articles = document.getElementsByTagName("article");
+      for (const allArticles of articles) {
+        //   console.log(allArticles);
+      }
+
+      const student = { name: "kismot", age: 16, height: 60 };
+      // console.log(document.body);
+
+      const blogTitles = document.getElementsByTagName("h3");
+      // console.log(blogTitles);
+
+      for (const h3 of blogTitles) {
+        //   console.log(h3);
+      }
+
+      const paragraph = document.getElementsByTagName("p");
+      for (const p of paragraph) {
+        //   console.log(p.innerText);
+      }
+
+      const spanTags = document.getElementsByTagName("span");
+      for (const spanTag of spanTags) {
+        //   console.log(spanTag.innerText);
+      }
+
+      const secondTitle = (document.getElementById("second-title").style.color =
+        "red");
+      console.log(secondTitle);
+
+      //
+      const thirdTitle = document.getElementById("third-title");
+      thirdTitle.style.textAlign = "center";
+      thirdTitle.innerText = "Changing text from JS";
+      thirdTitle.style.fontSize = "25px";
+      thirdTitle.style.border = "1px solid red";
+      thirdTitle.style.backgroundColor = "yellow";
+      thirdTitle.style.width = "300px";
+      thirdTitle.style.margin = "0 auto";
+      thirdTitle.style.padding = "10px 0";
+
+      //
+      const fourthTitle = document.getElementById("fourth-title");
+      fourthTitle.innerText = "This is our fouth Title";
+      fourthTitle.style.textAlign = "center";
+      fourthTitle.style.fontSize = "36px";
+      fourthTitle.style.color = "green";
+      fourthTitle.style.backgroundColor = "lightgreen";
+      fourthTitle.style.padding = "20px";
+
+      //
+      const blogs = document.getElementsByClassName("blog");
+      for (const allBlog of blogs) {
+        allBlog.style.border = "2px solid orange";
+        allBlog.style.borderRadius = "10px";
+        allBlog.style.margin = "5px";
+        allBlog.style.padding = "10px";
+      }
+
+      // create and add element by using javascript
+      const li = document.createElement("li");
+      li.innerText = "Blog-5";
+      // where to add,
+      const ul = document.getElementById("blog-list");
+      // append new element
+      ul.appendChild(li);
+
+      // add article
+      const article = document.createElement("article");
+      const h3 = document.createElement("h3");
+      h3.innerText = "Ny awesome blog - 5";
+      const p = document.createElement("p");
+      p.innerText =
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim porro inventore consequuntur quos illum voluptatum eos magnam possimus deleniti laudantium?";
+      article.appendChild(h3);
+      article.appendChild(p);
+
+      // parent of article
+      const blogSection = document.getElementById();
+      blogSection.appendChild(article);
+    </script>
+  </body>
+</html>
+
+<!-- 
+
+<script>
+  // NodeList
+  // html collection
+</script>
+
+-->

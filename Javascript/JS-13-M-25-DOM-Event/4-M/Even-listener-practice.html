@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Evan listener</title>
+  </head>
+  <body>
+    <div>
+      <p id="text-field">
+        Click the button for change the paragraph value from the input
+      </p>
+      <input type="text" name="text" id="value-field" /><button
+        type="submit"
+        id="value-button">
+        Click the button for change the value
+      </button>
+    </div>
+
+    <script>
+      const textField = document.getElementById("text-field");
+      const valueField = document.getElementById("value-field");
+
+      document
+        .getElementById("value-button")
+        .addEventListener("click", function () {
+          document.getElementById("text-field").innerText = valueField.value;
+          valueField.value = ``;
+        });
+    </script>
+
+    <!--  -->
+    <!--  -->
+
+    <p id="drop-value">Indirect value</p>
+    <button onclick="clickEvent()" id="submit-value">Submit the value</button>
+
+    <script>
+      function clickEvent() {
+        const pValue = document.getElementById("drop-value");
+        pValue.innerText = "set by using function";
+      }
+    </script>
+
+    <!--  -->
+    <!--  -->
+
+    <div>
+      <p id="take-input-value">Take the value from the input</p>
+      <input type="text" name="text" id="input-value" />
+      <button id="submit-input-button">Submit value</button>
+    </div>
+
+    <script>
+      document
+        .getElementById(`submit-input-button`)
+        .addEventListener("click", function () {
+          const takeInputValue = document.getElementById("take-input-value");
+          const inputValue = document.getElementById("input-value");
+          takeInputValue.innerText = inputValue.value;
+        });
+    </script>
+
+    <!--  -->
+    <!--  -->
+
+    <p id="name-age" style="font-size: 20px">
+      Click these button which do you want to see.
+    </p>
+    <!--  -->
+    <button id="name-button" onclick="showMyName()">
+      Click me for see the name &uArr;
+    </button>
+    <button id="age-button">Click me for see the age &uArr;</button>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script>
+      function showMyName() {
+        const myName = document.getElementById("name-age");
+        myName.innerText = `My name is => Mohammad Asraful Alam Jehad`;
+        myName.style.fontWeight = "bold";
+        myName.style.fontSize = "20px";
+      }
+      // // // direct
+      document
+        .getElementById("age-button")
+        .addEventListener("click", function () {
+          document.getElementById("name-age").innerText = "My age is => 25";
+          document.getElementById("name-age").style.fontWeight = "bold";
+          document.getElementById("name-age").style.fontSize = "20px";
+        });
+    </script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script>
+      // for paragraph => just set inner text
+      // for input => just set input ID name dot(.) value
+      // when you want input submit then input is empty so you do this formula => inputName.value = ""; (empty string)
+    </script>
+  </body>
+</html>

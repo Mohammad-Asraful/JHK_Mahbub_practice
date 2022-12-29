@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1 onclick="alert('Valo hoye jao')">Event niye Clickbaji</h1>
+    <button onclick="alert(7)">Click Me</button>
+    <button onclick="console.log(7)">Click Me</button>
+    <!-- <button onclick="document.write(7)">Click Me</button> -->
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      Click Me yellow
+    </button>
+    <!--  -->
+    <button id="red" onclick="makeRed()">Click me: Red</button>
+    <button id="make-blue-button">Click me: Blue</button>
+    <!--  -->
+    <input
+      onclick="alert('You are clicked by me')"
+      type="button"
+      name="button"
+      id="orange-button"
+      value="Input Button" />
+
+    <button id="make-green-button">Click me: Green</button>
+    <button id="make-gray-button">Click me: Gray</button>
+    <button id="make-goldenrod">Click me: Golden rod</button>
+    <button id="make-hotPink">Click me: Hot pink</button>
+    <button id="make-lightbule">Click me: light blue</button>
+
+    <script src="./Events.js"></script>
+
+    <script></script>
+
+    <!--     <script>
+      const hotPinkButton = document.getElementById("make-hotPink");
+      hotPinkButton.addEventListener("click", function makePink() {
+        document.body.style.backgroundColor = "hotpink";
+      });
+    </script> -->
+  </body>
+</html>
+
+<!--  -->
+<!--  -->
+<!--  -->
+<script>
+  // // // single line onclick function in HTML
+  // onclick="document.body.style.backgroundColor = 'gray'"
+  // ///////////////////////////////////////////////////
+  // // // script => onclick function in direct function with document
+  /* const grayButton = document.getElementById("make-gray-button");
+  grayButton.onclick = function () {
+    document.body.style.backgroundColor = "gray";
+      }; */
+</script>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment</title>
+  </head>
+  <body>
+    <h2>Add your comment, please</h2>
+
+    <section>
+      <div id="comment-conatianer">
+        <h4>Your comments</h4>
+        <!--         <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+          dicta fugiat sequi cumque obcaecati. Perferendis explicabo laboriosam
+          odio iusto illum exercitationem corporis incidunt magni quod qui
+          natus, nemo ab pariatur?
+        </p>
+        <p>
+          Temporibus officiis animi ex harum libero corrupti quod, amet, eaque
+          delectus nobis culpa consectetur omnis eligendi nostrum facilis. Ipsam
+          dicta quae, odio doloremque fugiat laudantium eos molestias esse nobis cupiditate.
+        </p> -->
+      </div>
+      <div>
+        <textarea
+          style="resize: none"
+          id="new-comment"
+          cols="60"
+          rows="10"></textarea>
+        <br />
+        <button id="submit-comment">Post</button>
+      </div>
+
+      <script>
+        // 1. add button event handler
+
+        document
+          .getElementById("submit-comment")
+          .addEventListener("click", function () {
+            // 2. get user comment
+            const commentBox = document.getElementById("new-comment");
+            // const userComment = commentBox.value;
+
+            // 3. create comment paraarph
+            const newComment = document.createElement("p");
+            newComment.innerText = commentBox.value;
+
+            // 4. append the comment
+            const commentContainer =
+              document.getElementById("comment-conatianer");
+            commentContainer.appendChild(newComment);
+
+            // 5. clean the comment box
+            commentBox.value = "";
+          });
+      </script>
+    </section>
+
+    <section>
+      <div id="comment-container1">
+        <h2>Add your comment on this area</h2>
+        <!--  -->
+      </div>
+      <div>
+        <textarea
+          style="resize: none"
+          id="new-comment1"
+          cols="60"
+          rows="10"></textarea>
+        <br />
+        <button id="submit-comment1">Post comment</button>
+      </div>
+
+      <script>
+        // 1. add button event handler
+        document
+          .getElementById("submit-comment1")
+          .addEventListener("click", function () {
+            const newComment1 = document.getElementById("new-comment1");
+            //
+            const newParagraph = document.createElement("p");
+            newParagraph.innerText = newComment1.value;
+            //
+            const commentContainer1 =
+              document.getElementById("comment-container1");
+            commentContainer1.appendChild(newParagraph);
+            newComment1.value = "";
+          });
+
+        // 2. get user comment
+        // 3. create comment paraarph
+        // 4. append the comment
+        // 5. clean the comment box
+      </script>
+
+      <div id="comment-content">
+        <h1>Comments</h1>
+      </div>
+      <div>
+        <textarea
+          style="resize: none"
+          id="text-box"
+          cols="60"
+          rows="10"></textarea
+        ><br />
+        <button id="comment-btn">Comment</button>
+
+        <script>
+          //   first a button ke call kore tar moddhe addEventListener er click event chaliye 2nd parameter hishebe function chalate hobe,     1. tarpor variable diye commentBox ke call korte hobe.    2. tarpor variable diye ekta document element create kore - sei element inner text hishebe commentBox er value set kore dite hobe.     3. tarpor varible diye comment container call kore taar append child hishebe new element ke add kore dite hobe       4. tarpor comment box ke empty string kore dite hobe
+
+          //
+
+          document
+            .getElementById("comment-btn")
+            .addEventListener("click", function () {
+              const textBox = document.getElementById("text-box");
+
+              const newElement = document.createElement("p");
+              newElement.innerText = textBox.value;
+
+              const commentContent = document.getElementById("comment-content");
+
+              commentContent.appendChild(newElement);
+              textBox.value = "";
+            });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

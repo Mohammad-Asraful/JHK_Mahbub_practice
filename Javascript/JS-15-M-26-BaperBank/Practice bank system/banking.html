@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./banking.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>My Bank</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 id="login-header">Welcome to your account</h1>
+
+        <div class="payment-boxes">
+          <div class="box1">
+            <h2>Deposit</h2>
+            <h2>$<span id="deposit-total">00</span></h2>
+          </div>
+          <div class="box2">
+            <h2>Withdraw</h2>
+            <h2>$<span id="wthdraw-total">00</span></h2>
+          </div>
+          <div class="box3">
+            <h2>Balance</h2>
+            <h2>$<span id="balance-total">1240</span></h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deposit and Withdraw -->
+      <section class="deposit-withdraw">
+        <div class="container">
+          <div class="deposit-withdraw-div">
+            <div class="deposit-box">
+              <h3>Please Deposit</h3>
+              <div>
+                <input
+                  id="deposit-input"
+                  type="text"
+                  placeholder="$amount you want to deposit" />
+
+                <button id="deposit-button">Deposit</button>
+              </div>
+            </div>
+
+            <div class="withdraw-box">
+              <h3 class="text-2xl">Please Withdraw</h3>
+              <div>
+                <input
+                  id="Withdraw-input"
+                  type="text"
+                  placeholder="$amount you want to Withdraw" />
+
+                <button id="Withdraw-button">Withdraw</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./banking.js"></script>
+  </body>
+</html>
