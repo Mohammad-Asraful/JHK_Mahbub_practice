@@ -1,3 +1,15 @@
+/* 
+                     topic
+                     // toLowercase
+                     // toUppercase
+                     // indexOf
+                     // includes
+                     // startWith
+                     // endWith
+                     // push
+*/
+
+
 const products = [
    'Dell hardcore i29 200GB laptop',
    'iphone 1TB camera flashlight Phone',
@@ -44,3 +56,24 @@ for (const product of products) {
    ]
 }
 // console.log(output)
+
+// // // // // practice 
+searching = "htc"
+let pushText = []
+for (const product of products) {
+   if (product.toLowerCase().startsWith(searching.toLowerCase())) {
+      pushText.push(product)
+   }
+}
+console.log(pushText) // // // ///////
+
+
+// // // // End with
+searching = "phone"
+pushText = []
+for (const product of products) {
+   if (product.toLowerCase().endsWith(searching.toLowerCase())) {
+      pushText.push(product)
+   }
+}
+console.log(pushText) /////////////////
