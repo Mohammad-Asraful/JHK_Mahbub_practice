@@ -12,6 +12,7 @@ const [best, faltu] = ['Sazzad', 'Asraf']
 const { sky, color, money } = { sky: 'blue', soil: 'matti', color: 'red', money: 500 }
 
 // chainnig object
+// nested object
 const company = {
    name: 'GP',
    ceo: {
@@ -30,3 +31,10 @@ const company = {
       }
    }
 }
+// console.log(company.web.tech.second)
+
+// jodi kono value undefined hoy tahole question mark use kore check kora jay je se value ta ache kina, thakle porer stap a jabe , nahole undefined kore dibe. Like:
+console.log(company?.backend?.tech?.third)
+console.log(company.backend?.tech.third)
+console.log(company?.web?.framework?.first)
+console.log(company?.web?.tech?.first)
