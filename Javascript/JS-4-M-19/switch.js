@@ -17,8 +17,8 @@ if (color == "blue") {
 
 
 // switch case
-var color = "green";
-switch (color) {
+var number = "green";
+switch (number) {
     case "blue":
         console.log("color is blue")
         break;
@@ -70,3 +70,4 @@ switch (numbers) {
         console.log(`Invalid day.`)
         break;
 }
+

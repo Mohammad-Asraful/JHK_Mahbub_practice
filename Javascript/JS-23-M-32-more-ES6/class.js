@@ -16,7 +16,7 @@ class Supports {
    name1
    role = 'support web dev'
    address1 = 'BD'
-   constructor1(name1) {
+   constructor(name1) {
       this.name1 = name1
    }
    startSession1() {

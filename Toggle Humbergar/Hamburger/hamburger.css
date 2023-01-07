@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* .nav-container {
+  background-color: #fc6767;
+  width: 150px;
+  height: 100vh;
+} */
+
+.nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.nav-items ul li {
+  list-style: none;
+}
+
+.nav-items ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
