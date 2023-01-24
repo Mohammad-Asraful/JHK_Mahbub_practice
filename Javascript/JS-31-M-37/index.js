@@ -65,7 +65,6 @@ const uploadAPI = (data) => {
 
 
 
-
 const loadProduct = () => {
    const url = `https://fakestoreapi.com/products`
    fetch(url).then(res => res.json()).then(data => uploadProduct(data))
