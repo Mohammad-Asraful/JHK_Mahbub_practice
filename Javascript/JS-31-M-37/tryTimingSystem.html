@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Run time</title>
+
+    <style>
+      #clock {
+        display: flex;
+        gap: 20px;
+        background-color: #000;
+        width: 300px;
+        color: #fff;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 50px;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="clock">
+          <div>
+            <span id="hour">00</span><br />
+            <span>Hours</span>
+          </div>
+          <div>
+            <span id="minute">00</span><br />
+            <span>Minutes</span>
+          </div>
+          <div>
+            <span id="second">00</span><br />
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!--  -->
+    <script>
+      const time = () => {
+        let hour = new Date().getHours();
+        console.log(hour);
+        const hourText = document.getElementById("hour");
+        hourText.innerText = hour;
+
+        let minute = new Date().getMinutes();
+        console.log(minute);
+        const minuteText = document.getElementById("minute");
+        minuteText.innerText = minute;
+
+        let second = new Date().getSeconds();
+        console.log(second);
+        const secondText = document.getElementById("second");
+        secondText.innerText = second;
+
+        if (hour == "12") {
+          hour = 12;
+        } else if (hour == "24") {
+          hour = 0;
+        } else {
+          hour = hour % 2;
+        }
+      };
+
+      setInterval(() => {
+        time();
+      }, 1000);
+    </script>
+  </body>
+</html>
