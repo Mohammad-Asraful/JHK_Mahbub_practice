@@ -21,3 +21,10 @@ function makeMovie(couple1, couple2) {
 console.log(student1, student2)
 makeMovie(student1, student2)
 console.log(student1, student2)
+
+
+// Must you know : ==>
+// what is Hoisting in js
+// how to use the js callBack function
+// explain closure in js
+// Explain passed by value and passed by reference
